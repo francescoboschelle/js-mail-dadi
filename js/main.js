@@ -1,3 +1,5 @@
+// Mail
+
 const emails = [
   "francesco@gmail.com",
   "marco@gmail.com",
@@ -23,4 +25,21 @@ if (input) {
   }
 } else {
   alert("Devi inserire un email!");
+}
+
+// Gioco dei dadi
+
+const userScore = Math.floor(Math.random() * (6 - 1) + 1);
+const computerScore = Math.floor(Math.random() * (6 - 1) + 1);
+
+if (userScore === computerScore) {
+  alert(`Avete pareggiato! Punteggio: ${userScore}`);
+} else if (userScore > computerScore) {
+  alert(
+    `Hai vinto contro il computer! Il tuo punteggio: ${userScore}. Punteggio del computer: ${computerScore}`
+  );
+} else {
+  alert(
+    `Ha vinto il computer! Il tuo punteggio: ${userScore}. Punteggio del computer: ${computerScore}`
+  );
 }
